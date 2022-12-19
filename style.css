@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+.institute h2{
+    text-align: center;
+    font-weight: 700;
+    padding:40px;
+}
+.images{
+    display: inline-block;
+    margin-left:35% ;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+}
+.topic h1{
+    font-weight: 600;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.message p{
+    font-size: 20px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.form label{
+    display: block;
+    padding: 10px 20px;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  button{
+    margin-left: 20px;
+  }
+
+  .contributor{
+    margin: 50px 20px;
+    margin-right: 0;
+    width: calc(100%-20px);
+    overflow-x: hidden;
+    border: none;
+  }
+  .target{
+    animation-name: rightToLeft;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rightToLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+  }
+@media only screen and (max-width:500px) {
+    .images{
+        display: inline-block;
+        margin-left:20% ;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    
+}
